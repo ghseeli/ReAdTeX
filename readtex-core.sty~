@@ -1,0 +1,112 @@
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+%\usepackage[plain]{algorithm}
+%\usepackage{algpseudocode}
+\usepackage{gensymb}
+\usepackage{graphicx, tipa}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+
+\usetikzlibrary{automata,positioning}
+
+% 
+% Various Helper Commands
+%
+% For derivatives
+\newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
+% For partial derivatives
+\newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+\DeclareMathOperator\erf{\mathscr{E}rf}
+% Integral dx
+\newcommand{\dx}{\mathrm{d}x}
+% Alias for the Solution section header
+\newcommand{\solution}{\textbf{\large Solution}}
+% Probability commands: Expectation, Variance, Covariance, Bias
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Bias}{\mathrm{Bias}}
+% Geometry Commands
+\newcommand{\arc}[1]{%
+  \setbox9=\hbox{#1}%
+  \ooalign{\resizebox{\wd9}{\height}{\texttoptiebar{\phantom{A}}}\cr#1}}
+% Column vector
+\newcount\colveccount
+\newcommand*\colvec[1]{
+        \global\colveccount#1
+        \begin{pmatrix}
+        \colvecnext
+}
+\def\colvecnext#1{
+        #1
+        \global\advance\colveccount-1
+        \ifnum\colveccount>0
+                \\
+                \expandafter\colvecnext
+        \else
+                \end{pmatrix}
+                \fi
+              }
+% Norm
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+      
+% Other useful macros
+\newcommand{\N}{{\mathbb N}} % natural numbers
+\newcommand{\Z}{{\mathbb Z}} % integers
+\newcommand{\Q}{{\mathbb Q}} % rational numbers
+\newcommand{\R}{{\mathbb R}} % real numbers
+\newcommand{\C}{{\mathbb C}} % complex numbers
+\newcommand{\D}{{\mathbb D}} % unit disk
+\newcommand{\ov}{\overline} % shorthand for a bar on a symbol
+
+% Relations
+\newcommand{\divides}{\mid} % longhand for divides
+\newcommand{\notdivides}{\nmid} % longhand for not divides
+\newcommand{\identically}{\equiv} % longhand for function is
+\newcommand{\propsubset}{\subsetneqq}
+% identically
+\newcommand{\congruent}{\equiv} % longhand for congruent
+\newcommand{\isom}{\cong} % isomorphic
+\newcommand{\intersect}{\cap}
+\newcommand{\Intersect}{\bigcap}
+\newcommand{\union}{\cup}
+\newcommand{\Union}{\bigcup}
+\newcommand{\disjunion}{\sqcup} % disjoint union
+\newcommand{\Disjunion}{\bigsqcup} % Big disjoint union
+\newcommand{\dunion}{\disjunion}
+\newcommand{\Dunion}{\Disjunion}
+% functions
+\newcommand{\from}{\colon} % proper spacing for f: X \to Y. Read ``f
+% from X to Y''
+\renewcommand{\to}[1][]{\overset{#1}{\rightarrow}}
+\newcommand{\into}{\hookrightarrow} % injective arrow
+\newcommand{\onto}{\twoheadrightarrow} % surjective arrow
+\newcommand{\correspondsto}{\leftrightarrow} % correspondance arrow
+\newcommand{\onetoonecorrespondance}{\overset{1\text{-}1}{\longleftrightarrow}}
+% one-to-one correspondance arrow
+\newcommand{\isomto}{\overset{\sim}{\to}} % isomorphism arrow
+
+% quantifiers
+\newcommand{\suchthat}{\mid} % for power set notation
+\newcommand{\st}{\suchthat} % shorthand for such that
+\newcommand{\unique}{!} % long form for unique
+
+% Operators
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\rk}{\operatorname{rk}}
+
+% Categories
+\newcommand{\catname}[1]{{\normalfont\textbf{#1}}}
+\newcommand{\derivcat}{\mathcal{D}}
+
+% Redefining how I want TeX to work
+\renewcommand{\emptyset}{{\varnothing}}
+\renewcommand{\implies}{\mathrel{\Longrightarrow}}
+\renewcommand{\impliedby}{\mathrel{\Longleftarrow}}
+\renewcommand{\iff}{\mathrel{\Longleftrightarrow}}
+\renewcommand{\subset}{\subseteq}
+\renewcommand{\supset}{\supseteq}

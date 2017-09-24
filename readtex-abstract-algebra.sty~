@@ -1,0 +1,24 @@
+\usepackage{../my-shortcuts}
+\newcommand{\F}{{\mathbb F}} % field
+% \DeclareMathOperator\Span{span}
+\newcommand{\subgroup}{\mathrel{\leq}}
+\newcommand{\propsubgroup}{\mathrel{\lneqq}}
+\newcommand{\normsubgroup}{\mathrel{\unlhd}}
+\newcommand{\ideal}{\mathrel{\unlhd}}
+\newcommand{\submodule}{\subgroup}
+\newcommand{\Sym}{\mathfrak{S}} % symmetic group
+\newcommand{\sgn}{\operatorname{sgn}} % sign
+\newcommand{\Inn}{\operatorname{Inn}} % inner automorphism
+\newcommand{\Aut}{\operatorname{Aut}} % automorphism
+\newcommand{\End}{\operatorname{End}} % endomorphism
+\newcommand{\Hom}{\operatorname{Hom}} % Hom space
+\newcommand{\Ext}{\operatorname{Ext}} % Ext functor
+\newcommand{\Stab}{\operatorname{Stab}} % stabilizer  
+\newcommand{\Ann}{\operatorname{Ann}} % annihilator
+\newcommand{\coker}{\operatorname{coker}} % cokernel
+\newcommand{\rank}{\operatorname{rk}} % rank
+\newcommand{\Char}{\operatorname{char}} % characteristic
+\newcommand{\im}{\operatorname{im}} % image
+\newcommand{\tr}{\operatorname{tr}} % trace
+\newcommand{\rad}{\operatorname{rad}} % radical
+\setlist[enumerate]{label=(\alph*)}
