@@ -1,8 +1,0 @@
-\usepackage{../my-shortcuts}
-\newcommand{\homeom}{\isom}
-\renewcommand{\D}{D} % Disk
-\newcommand{\RP}{\mathbb{RP}} % Real Projective Plane
-\newcommand{\CP}{\mathbb{CP}} % Complex Projective Plane
-\newcommand{\fund}{\pi_1} % Fundamental group
-\newcommand{\cupprod}{\smile} % Cup product
-\newcommand{\Top}{\catname{Top}} % Category Top
