@@ -23,8 +23,7 @@
 \DeclareMathOperator\erf{\mathscr{E}rf}
 % Integral dx
 \newcommand{\dx}{\mathrm{d}x}
-% Alias for the Solution section header
-\newcommand{\solution}{\textbf{\large Solution}}
+
 % Probability commands: Expectation, Variance, Covariance, Bias
 \newcommand{\E}{\mathrm{E}}
 \newcommand{\Var}{\mathrm{Var}}
@@ -62,15 +61,18 @@
 \newcommand{\C}{{\mathbb C}} % complex numbers
 \newcommand{\D}{{\mathbb D}} % unit disk
 \newcommand{\ov}{\overline} % shorthand for a bar on a symbol
+\newcommand{\infinity}{\infty} % infinity
 
 % Relations
 \newcommand{\divides}{\mid} % longhand for divides
 \newcommand{\notdivides}{\nmid} % longhand for not divides
-\newcommand{\identically}{\equiv} % longhand for function is identically
-\newcommand{\propsubset}{\subsetneqq}
+\newcommand{\identically}{\equiv} % longhand for function is
+% identically
+\newcommand{\propersubset}{\subsetneqq} % proper subset
+\newcommand{\propsubset}{\propersubset} 
 \newcommand{\congruent}{\equiv} % longhand for congruent
 \newcommand{\isom}{\cong} % isomorphic
-\newcommand{\intersect}{\cap}
+\newcommand{\intersect}{\cap} 
 \newcommand{\Intersect}{\bigcap}
 \newcommand{\union}{\cup}
 \newcommand{\Union}{\bigcup}
@@ -81,11 +83,10 @@
 % functions
 \newcommand{\from}{\colon} % proper spacing for f: X \to Y. Read ``f
 % from X to Y''
-\renewcommand{\to}[1][]{\overset{#1}{\rightarrow}}
 \newcommand{\into}{\hookrightarrow} % injective arrow
 \newcommand{\onto}{\twoheadrightarrow} % surjective arrow
 \newcommand{\correspondsto}{\leftrightarrow} % correspondance arrow
-\newcommand{\onetoonecorrespondance}{\overset{1\text{-}1}{\longleftrightarrow}}% one-to-one correspondance arrow
+\newcommand{\onetoonecorrespondence}{\overset{1\text{-}1}{\longleftrightarrow}}% one-to-one correspondance arrow
 \newcommand{\isomto}{\overset{\sim}{\to}} % isomorphism arrow
 
 % quantifiers
@@ -94,9 +95,10 @@
 \newcommand{\unique}{!} % long form for unique
 
 % Operators
-\newcommand{\Span}{\operatorname{span}}
-\newcommand{\rk}{\operatorname{rk}}
-\newcommand{\codim}{\operatorname{codim}}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\rank}{rank}
+\newcommand{\rk}{\rank}
+\DeclareMathOperator{\codim}{codim}
 
 % Categories
 \newcommand{\catname}[1]{{\normalfont\textbf{#1}}}
