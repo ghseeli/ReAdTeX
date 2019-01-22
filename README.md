@@ -11,7 +11,7 @@ Specifically, and for good reasons, in (La)TeX, typeset symbols are named after 
 1. Parsing the TeX code is much faster for a human reader.
 1. A standard set of commands makes it easier for readers to change conventions to their tastes.
 
-Many such long-hands will be added here, along with typical convenience functions that I use in my LaTeX documents. Many of these ideas are inspired by my work on ghseeli/grad-school-notes. After using this system with collaborators and on my own, I believe it offers many merits worth the slight time disadvantages that come with typing a few extra characters here or there.
+Many such long-hands will be added here, along with typical convenience functions that I use in my LaTeX documents. Many of these ideas are inspired by my work on [ghseeli/grad-school-notes](https://github.com/ghseeli/grad-school-notes). After using this system with collaborators and on my own, I believe it offers many merits worth the slight time disadvantages that come with typing a few extra characters here or there.
 
 # How to use
 
