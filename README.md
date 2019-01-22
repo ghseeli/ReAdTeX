@@ -12,3 +12,9 @@ Specifically, and for good reasons, in (La)TeX, typeset symbols are named after 
 1. A standard set of commands makes it easier for readers to change conventions to their tastes.
 
 Many such long-hands will be added here, along with typical convenience functions that I use in my LaTeX documents. Many of these ideas are inspired by my work on ghseeli/grad-school-notes. After using this system with collaborators and on my own, I believe it offers many merits worth the slight time disadvantages that come with typing a few extra characters here or there.
+
+# How to use
+
+The primary file for this project is `readtex-core.sty`. Simply download the file into your TeX project directory, and then add `\usepackage{readtex-core}` in with your other package statements below the `\documentclass` command. 
+
+Other files are for more domain specific areas of math and may have less canonical choices of commands; they were mainly used for me to type up homework assignments in my first year of graduate school. They are provided "as-is" but use at your own risk! Finally, `readtex-dangerous.sty` contains commands that will override standard behavior of commands. Only use this file if you know what you are doing!
